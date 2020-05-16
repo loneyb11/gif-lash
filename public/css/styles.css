@@ -1,0 +1,245 @@
+body, html{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+ display: flex;
+ flex-direction: column;
+
+}
+button:focus {outline:0;}
+
+/*--Landing Page--*/
+.main-landing-pg{
+  flex: 1 0 auto;
+  background-image: linear-gradient(-120deg, rgb(196, 80, 192), rgb(72, 87, 207));
+}
+.welcome-text{
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(-120deg, rgb(196, 80, 192), rgba(255, 255, 255, 0.192),rgb(72, 87, 207));
+}
+#auth-form{
+  width: 30%;
+  margin-top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.auth-title{
+  color: white;
+}
+/*--Navigation--*/
+.navbar{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar-brand{
+  font-size: 2rem;
+}
+.navbar a {
+  color: white;
+}
+.navbar-nav{
+  flex-direction: row;
+}
+.navbar-nav .nav-link{
+  display: inline;
+  margin-right: 15px;
+  padding: 0px 5px 5px 0px;
+  font-size: 1.2rem;
+}
+.nav-link:hover
+{
+  border-bottom: 2px solid white;
+}
+/*--Footer--*/
+.footer{
+  flex-shrink: 0;
+  background-color: rgb(34, 34, 34);
+  color: #6c757d !important;
+  text-align: center;
+}
+.footer-text{
+ margin: 0;
+ padding: 10px;
+ font-size: .5rem;
+}
+/*--Lobby Landing Page--*/
+#main-window{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.welcome-lobby-text{
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(-120deg, #fa7199, rgba(255, 255, 255, 0.192), rgba(253, 182, 120, 0));
+}
+#btn-container{
+  text-align: center;
+}
+#form-container
+{
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  width: 30%;
+  margin: 50px auto;
+  background-color:rgba(22, 22, 22, 0.671);
+}
+.lobby-btn{
+  margin: 28px auto 0px auto;
+  font-size: 2rem;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.create-btn-caret{
+  color: transparent;
+  margin-right: 5px;
+}
+.create-game:hover > .create-btn-txt{
+  border-bottom: 2px solid white;
+}
+.create-game:hover > .create-btn-caret{
+  transition: 1s;
+  color: rgb(255, 255, 255);
+}
+.join-btn-caret{
+  color: transparent;
+  margin-right: 5px;
+}
+.join-game:hover > .join-btn-txt{
+  border-bottom: 2px solid white;
+}
+.join-game:hover > .join-btn-caret{
+  transition: 1s;
+  color: rgb(255, 255, 255);
+}
+#form-container{
+  display: none;
+}
+.form-create-btn{
+  font-size: 1.5rem;
+  padding: 5px 40px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  background-color: #fa7199;
+  border: 1px solid white;
+  color: white;
+}
+.form-create-btn:hover{
+  transition: 1s;
+  background-color: transparent;
+}
+form label{
+  margin-right: 10px;
+}
+.form-err-msg{
+  display: none;
+  color: red;
+}
+#server-table-container{
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  width: 30%;
+  margin: 50px auto;
+  min-height: 542px;
+  background-color:rgba(22, 22, 22, 0.671);
+}
+.table thead th{
+  border: none !important;
+}
+table tbody tr:nth-child(odd)
+{
+  color: black;
+  background-color: #fff7f9;
+}
+table tbody tr:hover{
+  background-image: linear-gradient(-90deg,#fa7199, rgb(250, 113, 153), rgb(255, 229, 98));
+}
+
+/*--Game Page--*/
+#game-landing-pg
+{
+  flex: 1 0 auto;
+  background-image: linear-gradient(-120deg,#fa7199, rgb(250, 113, 153), rgb(255, 229, 98));
+}
+#mainWindow{
+  margin-top: 20px;
+  width: 90%;
+}
+#gameWindow{
+  padding-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#chatWindow{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  max-height: 80vh;
+  min-height: 80vh;
+  padding: 0;
+}
+#user-message{
+  width: 100%;
+}
+.user-name{
+  font-weight: bold;
+}
+.user-name .message-text{
+  font-weight: lighter;
+}
+#messages{
+  position: relative;
+  list-style-type: none; margin: 0; padding: 0; 
+  color: #3B4048;
+  max-height: 92%;
+  min-height: 92%;
+  overflow-y: scroll;
+  overflow-wrap: break-word ;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.message-form { 
+  margin: 0px; margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 98%
+}
+/*--Ready Page--*/
+.announcer-gif{
+  height: unset;
+  width: unset;
+}
+.announcer-gif:hover{
+  border: none !important;
+}
+img{
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  max-height: 250px;
+}
+img:hover{
+  border: solid 2px rgb(255, 75, 75);
+}
+.announcer-gif{
+  margin-top: 20px;
+}
+.ready-up{
+  margin: 28px auto 0px auto;
+  font-size: 2rem;
+  display: block; 
+}

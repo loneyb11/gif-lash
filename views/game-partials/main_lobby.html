@@ -1,0 +1,72 @@
+<h1 class="welcome-lobby-text">Welcome Username!</h1>
+
+<div id="btn-container">
+     <button class="create-game lobby-btn">
+         <span class="fas fa-caret-right create-btn-caret"></span>
+         <span class="create-btn-txt">Create Game</span>
+     </button>
+     <button class="join-game lobby-btn">
+         <i class="fas fa-caret-right join-btn-caret"></i>
+         <span class="join-btn-txt">Join Game</span>
+    </button>
+</div>
+
+<div id="server-table-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Server Name</th>
+                <th scope="col">Players</th>
+                <th scope="col">Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<div id="form-container">
+    <form>
+        <div class="form-group">   
+            <label for="serverName">Server Name</label>
+            <label id="serverName" class="form-err-msg">Field required.</label>
+            <input class="form-control" type="text" name="serverName" placeholder="Waffles" maxlength="20" minlength="3">
+        </div>
+         <div class="form-group">   
+            <label for="password">Password</label>
+            <label id="password" class="form-err-msg">Field required.</label>
+            <input class="form-control" type="password" name="password" placeholder="abcd123!%$" minlength="8">
+        </div>
+        <div class="form-group">
+            <label for="playerCount">Player Count</label>
+            <label id="playerCount" class="form-err-msg">Field required.</label>
+            <input class="form-control" type="number" name="playerCount" placeholder="5" min="2" max="10">
+        </div>
+         <div class="form-group">
+            <label for="roundNumber">Number Of Rounds</label>
+            <label id="roundNumber" class="form-err-msg">Field required.</label>
+            <input class="form-control" type="number" name="roundNumber" placeholder="5" min="1">
+        </div>
+        <div class="form-group">
+            <label for="searchTimer">Search Timer</label>
+            <label id="searchTimer" class="form-err-msg">Field required.</label>
+            <input class="form-control" type="number" name="searchTimer" placeholder="30" min="1">
+        </div>
+        <div class="form-group">   
+            <label for="voteTimer">Vote Timer</label>
+            <label id="voteTimer" class="form-err-msg">Field required.</label>
+            <input class="form-control" type="number" name="voteTimer" placeholder="30" min="1">
+        </div>
+        <div class="form-group">
+              <label for="questionType">Question Type</label>
+        <select class="form-control" name="questionType">
+            <option value="R">R</option>
+             <option value="PG">PG-13</option>
+        </select>
+        </div>
+         <div class="form-group">
+            <button type="submit" class="form-create-btn">Create</button>
+        </div>
+    </form>
+</div>
