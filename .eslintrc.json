@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base",
+        "jquery"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "no-undef": "off",
+        "space-in-parens": "off",
+        "array-bracket-spacing": "off",
+        "no-unused-vars": "off",
+        "computed-property-spacing": "off",
+        "no-use-before-define": "off",
+        "padded-blocks": "warn"
+    }
+}
